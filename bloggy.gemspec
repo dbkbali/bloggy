@@ -23,7 +23,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency 'jekyll', '~> 1.4.2'
+  s.add_dependency 'jekyll', '~> 2.0.0.alpha.3'
+  s.add_dependency 'jekyll-localization'
   s.add_dependency 'rails'
   s.add_dependency 'rack-contrib'
 
@@ -31,8 +32,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rdoc', '~> 4.1'
   s.add_development_dependency 'redgreen', '~> 1.2'
   s.add_development_dependency 'RedCloth', '~> 4.2'
-  s.add_development_dependency 'redcarpet', '~> 2.3'
+  s.add_development_dependency 'redcarpet', '~> 3.1'
 
-  s.add_runtime_dependency 'rdiscount', '~> 2.1'
+  s.add_runtime_dependency 'kramdown', '~> 1.3.3'
 
 end
