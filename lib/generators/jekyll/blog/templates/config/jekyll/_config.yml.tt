@@ -1,7 +1,6 @@
 markdown: rdiscount
-permalink: /:title
-destination: ../../app/views/blog
-auto: true
+permalink: /:title.html
+destination: ../../public/<%= name %>
 exclude:
   - Rakefile
   - Gemfile
